@@ -20,7 +20,7 @@ function afficherMenu(liste) {
         menuDiv.innerHTML = `
        <div class="introuvable">
          <h2>Desole</h2>
-         <h3>Plat ou dessert introuvable<h3>
+         <h3>Plat ou dessert introuvable</h3>
          <p>Aucun plat ne correspond à votre recherche</p>
          <button onclick="filtrer('tous')">Retouner dans le menu</button>
          </div>
