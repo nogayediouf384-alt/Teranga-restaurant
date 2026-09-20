@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Sénégalais - Menu Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SEN Teranga Restaurant</h1>
+        <input type="text" id="searchInput" placeholder="Rechercher un plat (thieb, yassa...)">
+        <div class="filtres">
+            <button onclick="filtrer('tous')">Tous</button>
+            <button onclick="filtrer('plat')">Plats</button>
+            <button onclick="filtrer('dessert')">Desserts</button>
+            <button onclick="filtrer('entree')">Entrées</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu" class="grid"></section>
+
+        <aside id="panier">
+            <h2>🛒 Panier (<span id="count">0</span>)</h2>
+            <ul id="listePanier"></ul>
+            <p id="total">Total: 0 FCFA</p>
+            <button onclick="viderPanier()">Vider panier</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
